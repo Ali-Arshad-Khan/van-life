@@ -122,3 +122,88 @@ header .site-logo {
 .about-link:hover {
     transform: translate(1px, 1px);
 }
+
+.vanscard-container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 30px;
+}
+
+.vanscard-container img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.vanscard-content {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.vanscard-content h3 {
+  font-size: 20px;
+  line-height: 18px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.vanscard-content span {
+  font-size: 14px;
+  color: #161616;
+  margin-left: 6px;
+}
+
+.van-type {
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-type:hover {
+    color: #FFEAD0;
+}
+
+.van-type:focus {
+    outline: none;
+}
+
+.van-type.selected {
+    color: #FFEAD0;
+}
+
+.van-type.simple:hover, .van-type.simple.selected {
+    background-color: #E17654;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected {
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover, .van-type.luxury.selected {
+    background-color: #161616;
+}
+
+.van-type.clear-filters {
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
+}
+
+i[class*='van-type-'] {
+    padding: 7px 14px;
+}
+
