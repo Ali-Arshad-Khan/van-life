@@ -135,6 +135,11 @@ header .site-logo {
   border-radius: 5px;
 }
 
+.vans-card a {
+  color: #161616;
+  text-decoration: none; 
+}
+
 .vanscard-content {
   display: flex;
   justify-content: space-between;
