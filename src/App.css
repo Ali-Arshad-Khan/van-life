@@ -288,3 +288,19 @@ i[class*='van-type-'] {
     transform: translate(1px, 1px);
 }
 
+.host-nav {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+}
+
+.host-nav a {
+  color: black;
+}
+
+.host-nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
