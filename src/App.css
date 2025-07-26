@@ -331,4 +331,41 @@ i[class*='van-type-'] {
   font-weight: bold;
 }
 
+.hostvans-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #115E59; */
+}
 
+.hostVans-card {
+    display: flex;
+    align-items: center;
+    max-height: 102px;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    line-height: 5px;
+    border-radius: 6px;
+}
+
+.hostVans-card p {
+    color: #4D4D4D;
+    font-size: 16px;
+}
+
+.hostVans-card img {
+    width: 66px;
+    border-radius: 5px;
+}
+
+.host-vans-title {
+  margin-left: 32px;
+  /* padding-left: 20px; */
+} 
+
+.host-van-link-wrapper {
+    color: unset;
+    text-decoration: unset;
+}
