@@ -151,6 +151,32 @@ header .site-logo {
     transform: translate(1px, 1px);
 }
 
+.van-list-container {
+    padding-inline: 23px
+}
+
+.van-list-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    gap: 15px;
+}
+
+.van-list-filter-buttons button {
+    font-size: 16px;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.van-list-filter-buttons > a {
+    margin-right: 15px;
+}
+
+.van-page-container h1{
+  margin-left: 25px;
+  font-size: 32px;
+}
+
 .vanscard-container {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
