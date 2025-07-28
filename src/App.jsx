@@ -16,6 +16,8 @@ import HostVanInfo from "./Pages/Host/HostVanInfo";
 import HostVanPricing from "./Pages/Host/HostVanPricing";
 import HostVanPhotos from "./Pages/Host/HostVanPhotos";
 import NotFound from "./Pages/NotFound";
+import Login from "./Pages/Login";
+import AuthRequired from "./components/AuthRequired";
 
 function App() {
   return (
@@ -26,8 +28,10 @@ function App() {
           <Route index element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/vans" element={<Vans />}/>
+          <Route path="/login" element={<Login />}/>
           <Route path="/vans/:id" element={<VanDetail />}/>
 
+          <Route element={<AuthRequired />}>
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />}/>
             <Route path="income" element={<Income />}/>
@@ -39,6 +43,8 @@ function App() {
               <Route path="photos" element={<HostVanPhotos />}/>
             </Route>
           </Route>
+          </Route>
+          
         </Route >
       </Routes>
     </BrowserRouter>

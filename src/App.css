@@ -57,6 +57,20 @@ header .site-logo {
     font-size: 25px;
 }
 
+header .login-icon {
+    height: 18px;
+    width: 18px;
+}
+
+header .login-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
 .not-found-container {
     padding-inline: 26px;
 }
@@ -516,5 +530,59 @@ i[class*='van-type-'] {
     height: 100px;
     width: 150px;
     border-radius: 5px;
+}
+
+
+.login-container {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.login-container form {
+  /* background-color: #115E59; */
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.login-container input {
+  height: 40px;
+  padding-inline: 15px;
+  border: 1px #D1D5DB solid;
+  color: #4D4D4D;
+  font-size: 16px;
+}
+
+.login-container input:focus {
+  outline: none;
+}
+
+.login-container form > input:first-of-type {
+  border-radius: 6px 6px 0 0;
+}
+
+.login-container form > input:last-of-type {
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+}
+
+.signin {
+  background-color: #FF8C38;
+  color: white;
+  border: unset;
+  height: 55px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
 }
 
