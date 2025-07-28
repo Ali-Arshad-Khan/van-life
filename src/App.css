@@ -586,3 +586,6 @@ i[class*='van-type-'] {
   margin-top: 25px;
 }
 
+.first-login {
+    color: red;
+}
