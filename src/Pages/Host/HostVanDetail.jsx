@@ -19,7 +19,7 @@ export default function HostVanDetail() {
             setLoading(true)
             try {
                 const data = await getHostVans(params.id)
-                setCurrentVan(data)
+                setVan(data)
             } catch (err) {
                 setError(err)
             } finally {
@@ -45,7 +45,7 @@ export default function HostVanDetail() {
             relative="path"
             className="back-button"
         >&larr; <span>Back to all vans</span></NavLink>
-
+        {van && 
         <div className = "hostVanDetail-container">
          <div className="host-van-detail">   
         <img src={van.imageUrl} alt={`Photo of ${van.name}`} />
@@ -81,7 +81,7 @@ export default function HostVanDetail() {
                 </nav>    
          {<Outlet context = {{van}} />}
         </div>
-
+        }
         </section>
     )
 }

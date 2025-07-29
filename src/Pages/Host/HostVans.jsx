@@ -4,15 +4,15 @@ import { getHostVans } from "../../api"
 
 export default function HostVans() {
     const [hostVans, setHostVans] = useState([]);
-    const [loading, setLoading] = React.useState(false)
-    const [error, setError] = React.useState(null)
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(null)
     
     useEffect(() => {
          async function loadVans() {
             setLoading(true)
             try {
                 const data = await getHostVans()
-                setVans(data)
+                setHostVans(data)
             } catch (err) {
                 setError(err)
             } finally {
@@ -20,7 +20,7 @@ export default function HostVans() {
             }
         }
         loadVans()
-    })
+    },[])
     
     const hostVansElement = hostVans.map(hostvan => (
         <Link to = {hostvan.id} key={hostvan.id} className="host-van-link-wrapper">

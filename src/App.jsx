@@ -26,10 +26,10 @@ function App() {
         <Route path="/" element = {<Layout />}>
           <Route path="*" element = {<NotFound />} />
           <Route index element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/vans" element={<Vans />}/>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/vans/:id" element={<VanDetail />}/>
+          <Route path="about" element={<About />}/>
+          <Route path="vans" element={<Vans />}/>
+          <Route path="login" element={<Login />}/>
+          <Route path="vans/:id" element={<VanDetail />}/>
 
           <Route element={<AuthRequired />}>
           <Route path="host" element={<HostLayout />}>

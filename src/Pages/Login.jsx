@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { loginUser } from "../api"
 export default function Login() {
     const [login, setLogin] = useState({email: "", password: ""})
@@ -7,25 +7,25 @@ export default function Login() {
     const [error, setError] = useState(null)
     
     const location = useLocation()
+    const navigate = useNavigate()
+    
+    const from = location.state?.from || "/host"
 
-    function handleSubmit(e) {
+   function handleSubmit(e) {
         e.preventDefault()
         setStatus("submitting")
-        async function getuser() {
-            try {
-                const data = await loginUser(login)
-                console.log(data)
+        loginUser(login)
+            .then(data => {
                 setError(null)
-            } catch (error) {
-                setError(error)
-            } finally {
+                localStorage.setItem("loggedin", true)
+                navigate(from, { replace: true })
+            })
+            .catch(err => {
+                setError(err)
+            })
+            .finally(() => {
                 setStatus("idle")
-            }
-
-        }
-
-        getuser()
-        console.log(login)
+            })
     }
 
     function handleInput(e) {
@@ -41,7 +41,7 @@ export default function Login() {
         <div className="login-container">
             {location.state?.message && <h3 className="first-login">{location.state.message}</h3>}
             <h1>Sign in to your account</h1>
-            {error?.message && <h3>{error.message}</h3>}
+            {error?.message && <h3 className="first-login">{error.message}</h3>}
             <form onSubmit={handleSubmit}>
                 <input 
                     name="email"
