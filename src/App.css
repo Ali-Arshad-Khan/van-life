@@ -589,3 +589,71 @@ i[class*='van-type-'] {
 .first-login {
     color: red;
 }
+
+.income-container {
+    padding-inline: 32px;
+}
+
+.income-container p {
+    color: #4D4D4D;
+    font-size: 16px;
+}
+
+.income-container p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.income-container .income {
+    margin-bottom: 35px;
+    font-size: 36px;
+}
+
+.income-container .amount {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.income-container img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.transaction-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.transaction-top h3 {
+    font-size: 24px;
+}
+
+.transaction-card-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.transaction-card {
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    height: 102px;
+    
+}
+
+.transaction-card h1 {
+    font-size: 36px;
+    color: #161616;
+}
+
+.transaction-card p {
+    font-size: 20px;
+}
