@@ -657,3 +657,67 @@ i[class*='van-type-'] {
 .transaction-card p {
     font-size: 20px;
 }
+
+.reviews-container {
+    padding-inline: 32px;
+}
+
+.reviews-container .reviews-container-top {
+    display: flex;
+    align-items: last baseline;
+    gap: 20px;
+}
+
+.reviews-container-top h1 {
+    font-size: 32px;
+}
+
+.reviews-container h2 {
+    font-size: 18px;
+}
+
+.reviews-container-top p {
+    color: #4D4D4D;
+}
+
+.reviews-container-top span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.rating-img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.review-card-container .review-card:first-child {
+    /* border-top: 2px red; */
+    /* background-color: rebeccapurple; */
+    margin-top: 20px;
+    padding-top: 0;
+    
+}
+
+.review-card {
+    /* background-color: red; */
+    padding-bottom: 20px;
+    padding-top: 30px;
+    border-bottom: 2px solid #C7C7C7;
+    /* background-color: palegoldenrod;
+    border-bottom: 2px red; */
+}
+
+.review-card p span {
+    color: black;
+    font-weight: bold;
+}
+
+.review-card .name {
+    /* font-weight: bold; */
+    color: #4D4D4D;
+}
+
+
+
