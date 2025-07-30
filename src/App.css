@@ -36,6 +36,47 @@ header {
   
 }
 
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.header-card {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff7ed;
+  transition: right 0.3s ease;
+  z-index: 100;
+}
+
+.header-card {
+    padding-block: 30px;
+}
+
+.header-card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.header-card .login-icon {
+    width: 24px;
+    height: 24px;
+}
+
+#menu-toggle:checked ~ .header-card {
+  right: 0;
+}
+
 a.active-link {
     font-weight: bold;
     text-decoration: underline;
@@ -279,6 +320,100 @@ nav {
  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .vanscard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .vanscard-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .dashboard-vans {
+        /* background-color: red; */
+        margin: 0;
+        padding: 0;
+    }
+    .dashboard-vans-container {
+        margin: 0;
+        padding: 0;
+        /* background-color: #115E59; */
+    }
+    .dashboard-hostVans-card {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .dashboard-hostVans-card {
+        font-size: 10px;
+    }
+    /* .dashboard-hostVans-card img {
+        display: none;
+    } */
+
+}
+
+
+@media (max-width: 382px) {
+
+    .dashboard-hostVans-card {
+        font-size: 12px;
+    }
+    .dashboard-hostVans-card img {
+        display: none;
+    }
+
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.burger-menu img{
+    width: 32px;
+}
+
+@media (max-width: 550px) {
+    .nav-left {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .nav-right button{
+        /* font-size: 10px; */
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 550px) {
+    .burger-menu {
+        display: none;
+    }
 }
 
 .vanscard-container img{
