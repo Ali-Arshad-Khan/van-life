@@ -1,10 +1,10 @@
 import {NavLink, Link} from "react-router-dom";
+import { useState } from "react";
+import { useAuth } from "../components/AuthContext";
 import avatarIcon from "../assets/avatar-icon.png"
 export default function Header() {
 
-    function logout() {
-      localStorage.removeItem("loggedin")
-    }
+   const { isLoggedIn, logout } = useAuth()
 
     return (
     <header>
@@ -31,15 +31,22 @@ export default function Header() {
         Vans
         </NavLink>
 
-        <NavLink to="login" className="login-link">
+        {/* <NavLink to="login" className="login-link">
             <img src={avatarIcon} alt="" className="login-icon"/>
-        </NavLink>
-        
-        <Link to="/" className="logout-btn">
-        <button onClick={logout} className="logout-btn">
-          Log Out
-        </button>
-        </Link>
+        </NavLink> */}
+         {isLoggedIn ? (
+              <Link to="/" className="logout-btn">
+                <button onClick={logout} className="logout-btn">
+                  Log Out
+                </button>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <img src={avatarIcon} alt="" className="login-icon"/>
+              </Link>
+           )}
+
+
         </nav>
     </header>
     )

@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 import { loginUser } from "../api"
+import { useAuth } from "../components/AuthContext";
 export default function Login() {
     const [login, setLogin] = useState({email: "", password: ""})
     const [status, setStatus] = useState("idle")
     const [error, setError] = useState(null)
-    
+    const {loginTrigger} = useAuth();
     
     const location = useLocation()
     const navigate = useNavigate()
@@ -18,7 +19,7 @@ export default function Login() {
         loginUser(login)
             .then(data => {
                 setError(null)
-                localStorage.setItem("loggedin", true)
+                loginTrigger()
                 navigate(from, { replace: true })
             })
             .catch(err => {

@@ -135,14 +135,31 @@ nav {
 
 .about-container {
   background-color: #FFF7ED;
+  /* background-color: red; */
+  display: flex;
+  padding-block: 30px;
 }
 
 .about-container img {
   /* max-height: 550px;
   max-width: 100%;
   width: 100%; */
-  max-width: 100%;
+  max-width: 600px;
   width: 100%;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+@media (max-width:768px) {
+    .about-container {
+        display: unset;
+    }
+    .about-container img {
+        max-width: unset;
+        margin-left: unset;
+        border-radius: unset;
+        max-width: unset;
+    }
 }
 
 .about-content {
@@ -185,7 +202,7 @@ nav {
 }
 
 .van-list-container {
-    padding-inline: 23px
+    padding-inline: 23px;
 }
 
 .van-list-filter-buttons {
@@ -218,7 +235,7 @@ nav {
 }
 
 .vanscard-container img{
-  max-width: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -303,8 +320,8 @@ i[class*='van-type-'] {
     padding: 27px;
     /* background-color: #115E59; */
   
-    /* display: flex;
-    justify-content: center; */
+    /* display: flex; */
+    
 }
 
 .van-detail-container .back-button {
@@ -322,15 +339,30 @@ i[class*='van-type-'] {
 
 .van-detail {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     color: #161616;
     /* max-width: 600px; */
     justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
+
+@media (max-width: 768px) {
+    .van-detail {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        gap: unset;
+    }
+}
+
+
 
 .van-detail img {
     border-radius: 5px;
     margin-block: 47px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .van-detail h2 {

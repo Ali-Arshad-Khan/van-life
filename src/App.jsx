@@ -21,7 +21,6 @@ import AuthRequired from "./components/AuthRequired";
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route path="/" element = {<Layout />}>
           <Route path="*" element = {<NotFound />} />
@@ -47,7 +46,7 @@ function App() {
           
         </Route >
       </Routes>
-    </BrowserRouter>
+
   )
 }
 
