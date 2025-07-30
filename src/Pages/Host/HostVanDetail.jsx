@@ -39,7 +39,7 @@ export default function HostVanDetail() {
     }
 
     return (
-        <section>
+        <section className="hostVanDetail-page">
          <NavLink
             to=".."
             relative="path"
