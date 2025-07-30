@@ -348,12 +348,19 @@ nav {
         font-size: 12px;
     }
 
+    .host-van-info h3 {
+        font-size: 14px !important;
+    }
+   
 }
 
 @media (max-width: 400px) {
 
     .dashboard-hostVans-card {
         font-size: 10px;
+    }
+    .host-van-info h3 {
+        font-size: 12px !important;
     }
     /* .dashboard-hostVans-card img {
         display: none;
