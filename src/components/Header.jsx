@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import avatarIcon from "../assets/avatar-icon.png"
 export default function Header() {
 
@@ -34,9 +34,13 @@ export default function Header() {
         <NavLink to="login" className="login-link">
             <img src={avatarIcon} alt="" className="login-icon"/>
         </NavLink>
-
-        <button onClick={logout}>Log Out</button>
-      </nav>
+        
+        <Link to="/" className="logout-btn">
+        <button onClick={logout} className="logout-btn">
+          Log Out
+        </button>
+        </Link>
+        </nav>
     </header>
     )
 }

@@ -6,6 +6,7 @@ export default function Login() {
     const [status, setStatus] = useState("idle")
     const [error, setError] = useState(null)
     
+    
     const location = useLocation()
     const navigate = useNavigate()
     
@@ -59,10 +60,28 @@ export default function Login() {
                     value={login.password}
                     required
                 />
-                <button className="signin" disabled={status === "submitting"}>
+                <button 
+                    className="signin" 
+                    disabled={status === "submitting"}
+                >    
+    
                     {status === "submitting" ? "Loging..." : "Sign in"}
                 </button>
+
+                  <p style={{ fontSize: "0.9rem", marginTop: "1rem" }}>
+                    <strong>Demo login:</strong><br />
+                    Email: <code>b@b.com</code><br />
+                    Password: <code>p123</code>
+                </p>
             </form>
+      <button
+        style={{ marginTop: "1rem" }}
+        onClick={() => {
+          setLogin({email: "b@b.com", password: "p123"});
+        }}
+      >
+        Autofill Demo Credentials
+      </button>
         </div>
     )
 }

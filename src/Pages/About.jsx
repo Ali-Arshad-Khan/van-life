@@ -13,7 +13,7 @@ export default function About() {
         </p>
         <div className="about-cto">
             <h2>Your destination is waiting.<br />Your van is ready.</h2>
-            <Link to="vans" className="about-link">Explore our vans</Link>
+            <Link to="/vans" className="about-link">Explore our vans</Link>
         </div>
          </div>
         </div>
