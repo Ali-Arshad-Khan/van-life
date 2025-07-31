@@ -171,25 +171,6 @@ nav {
     border-radius: 15px;
 }
 
-@media (max-width: 786px) {
-    .hero-image {
-        display: none;
-    }
-    .hero-section {
-        display: flex;
-        justify-content: left;
-        /* align-items: unset; */
-        gap: 100px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-    .hero-image img:last-child {
-        display: none;
-    }
-}
-
-
 .hero-section h1 {
   font-weight: 700;
   font-size: 2.25rem;
@@ -236,18 +217,6 @@ nav {
   width: 100%;
   border-radius: 15px;
   margin-left: 30px;
-}
-
-@media (max-width:768px) {
-    .about-container {
-        display: unset;
-    }
-    .about-container img {
-        max-width: unset;
-        margin-left: unset;
-        border-radius: unset;
-        max-width: unset;
-    }
 }
 
 .about-content {
@@ -322,63 +291,7 @@ nav {
   padding: 30px;
 }
 
-@media (max-width: 768px) {
-    .vanscard-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 600px) {
-    .vanscard-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 
-@media (max-width: 550px) {
-    .dashboard-vans {
-        /* background-color: red; */
-        margin: 0;
-        padding: 0;
-    }
-    .dashboard-vans-container {
-        margin: 0;
-        padding: 0;
-        /* background-color: #115E59; */
-    }
-    .dashboard-hostVans-card {
-        font-size: 12px;
-    }
-
-    .host-van-info h3 {
-        font-size: 14px !important;
-    }
-   
-}
-
-@media (max-width: 400px) {
-
-    .dashboard-hostVans-card {
-        font-size: 10px;
-    }
-    .host-van-info h3 {
-        font-size: 12px !important;
-    }
-    /* .dashboard-hostVans-card img {
-        display: none;
-    } */
-
-}
-
-
-@media (max-width: 382px) {
-
-    .dashboard-hostVans-card {
-        font-size: 12px;
-    }
-    .dashboard-hostVans-card img {
-        display: none;
-    }
-
-}
 
 header nav {
     display: flex;
@@ -403,25 +316,6 @@ header nav {
     width: 32px;
 }
 
-@media (max-width: 550px) {
-    .nav-left {
-        display: none;
-    }
-}
-
-@media (max-width: 350px) {
-    .nav-right button{
-        /* font-size: 10px; */
-        margin: 0;
-        padding: 0;
-    }
-}
-
-@media (min-width: 550px) {
-    .burger-menu {
-        display: none;
-    }
-}
 
 .vanscard-container img{
   width: 100%;
@@ -537,16 +431,6 @@ i[class*='van-type-'] {
     align-items: center;
     gap: 50px;
 }
-
-@media (max-width: 768px) {
-    .van-detail {
-        flex-direction: column;
-        justify-content: unset;
-        align-items: unset;
-        gap: unset;
-    }
-}
-
 
 
 .van-detail img {
@@ -964,9 +848,6 @@ i[class*='van-type-'] {
     color: #4D4D4D;
 }
 
-.dashboard-container {
-    
-}
 
 .details-link {
     font-size: 16px;
@@ -1053,5 +934,117 @@ i[class*='van-type-'] {
 .dashboard-hostVans-card {
     justify-content: space-between !important;
 }
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .hero-image img:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 786px) {
+    .hero-image {
+        display: none;
+    }
+    .hero-section {
+        display: flex;
+        justify-content: left;
+        /* align-items: unset; */
+        gap: 100px;
+    }
+    .vanscard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .van-detail {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        gap: unset;
+    }
+    .about-container {
+        display: unset;
+    }
+    .about-container img {
+        max-width: unset;
+        margin-left: unset;
+        border-radius: unset;
+        max-width: unset;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .vanscard-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .dashboard-vans {
+        /* background-color: red; */
+        /* margin: 0;
+        padding: 0; */
+    }
+    .dashboard-vans-container {
+        margin: 0;
+        padding: 0;
+        /* background-color: #115E59; */
+    }
+    .dashboard-hostVans-card {
+        font-size: 12px;
+    }
+
+    .host-van-info h3 {
+        font-size: 14px !important;
+    }
+    
+    .nav-left {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 400px) {
+
+    .dashboard-hostVans-card {
+        font-size: 10px;
+    }
+    .host-van-info h3 {
+        font-size: 12px !important;
+    }
+    /* .dashboard-hostVans-card img {
+        display: none;
+    } */
+
+}
+
+
+@media (max-width: 382px) {
+
+    .dashboard-hostVans-card {
+        font-size: 12px;
+    }
+    .dashboard-hostVans-card img {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 350px) {
+    .nav-right button{
+        /* font-size: 10px; */
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 550px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+
 
 

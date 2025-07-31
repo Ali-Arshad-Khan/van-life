@@ -23,7 +23,7 @@ export default function Reviews() {
             <div className="review-card-container">
                 {
                     reviews.map(review => (
-                        <div className="review-card">
+                        <div className="review-card" key={review.date}>
                             <div className="star-row">
                             {Array.from({ length: 5 }).map((_, i) => (
                                 <img src={review.starImg} alt="star" key={i} />
