@@ -2,7 +2,7 @@
 
 Live Demo: [tryvanlife.netlify.app](https://tryvanlife.netlify.app)
 
-Vanlife is a responsive, single-page web application built for showcasing a van rental experience. Users can explore a collection of travel vans, learn about the #vanlife movement, and access a host dashboard — all while experiencing smooth routing and demo authentication.
+Vanlife is a responsive, single-page web application for exploring and renting travel vans. It fetches real van data from **Firebase Firestore** and uses **MirageJS** to simulate user authentication and protected routes.
 
 ---
 
@@ -11,9 +11,9 @@ Vanlife is a responsive, single-page web application built for showcasing a van 
 - **Vite** – Lightning-fast frontend build tool  
 - **React** – Component-based UI  
 - **React Router** – Client-side routing  
-- **MirageJS** – Mock API for van data  
-- **Vanilla CSS** – Custom-styled UI (no frameworks)  
-- **Demo Authentication** – Simulated login experience
+- **Firebase Firestore** – Stores and fetches van data  
+- **MirageJS** – Mock API for login and host route protection  
+- **Vanilla CSS** – Custom-styled UI (no frameworks)
 
 ---
 
@@ -22,10 +22,11 @@ Vanlife is a responsive, single-page web application built for showcasing a van 
 - 🚌 Browse a list of vans with name, price, type & image  
 - 🔍 Filter vans by type (simple, luxury, rugged)  
 - 📄 View individual van detail pages  
-- 🔐 Demo login system (pre-filled credentials)  
+- 🔐 Demo login system with protected routes  
 - 👤 Host dashboard for managing listings  
-- 📱 Fully responsive design for mobile & desktop  
-- 💡 Uses MirageJS to fake backend API without setup
+- 🔄 Data is fetched from Firebase (not hardcoded)  
+- 📱 Fully responsive design  
+- 💡 Uses MirageJS to fake backend login without setup
 
 ---
 
