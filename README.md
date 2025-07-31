@@ -1,12 +1,38 @@
-# React + Vite
+# 🚐 Vanlife
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: [tryvanlife.netlify.app](https://tryvanlife.netlify.app)
 
-Currently, two official plugins are available:
+Vanlife is a responsive, single-page web application built for showcasing a van rental experience. Users can explore a collection of travel vans, learn about the #vanlife movement, and access a host dashboard — all while experiencing smooth routing and demo authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Vite** – Lightning-fast frontend build tool  
+- **React** – Component-based UI  
+- **React Router** – Client-side routing  
+- **MirageJS** – Mock API for van data  
+- **Vanilla CSS** – Custom-styled UI (no frameworks)  
+- **Demo Authentication** – Simulated login experience
+
+---
+
+## ✨ Key Features
+
+- 🚌 Browse a list of vans with name, price, type & image  
+- 🔍 Filter vans by type (simple, luxury, rugged)  
+- 📄 View individual van detail pages  
+- 🔐 Demo login system (pre-filled credentials)  
+- 👤 Host dashboard for managing listings  
+- 📱 Fully responsive design for mobile & desktop  
+- 💡 Uses MirageJS to fake backend API without setup
+
+---
+
+## 🔑 Demo Credentials
+
+You can log in using demo credentials from the login screen:
+
+```plaintext
+Email: b@b.com  
+Password: p123
