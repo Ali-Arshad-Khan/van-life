@@ -983,7 +983,7 @@ i[class*='van-type-'] {
     .dashboard-vans {
         /* background-color: red; */
         /* margin: 0;
-        padding: 0; */
+        padding: 0; *1/
     }
     .dashboard-vans-container {
         margin: 0;
